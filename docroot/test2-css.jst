@@ -1,0 +1,8 @@
+<%
+    res.contentType = 'text/css';
+    color = req.data.color || 'red';
+%>
+
+h1 {
+    color: <%= color %>;
+}

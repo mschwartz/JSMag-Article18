@@ -1,0 +1,15 @@
+<%
+        title = 'function demo';
+        color = req.data.color || 'red';
+        function li(n) {
+            print('<li>' + n + '</li>');
+        }
+%>
+<%= include('header.jst') %>
+<h1>Testing functions</h1>
+<ul>
+    <% for (var i=1; i<=10; i++) {
+        li(i);
+    } %>
+</ul>
+<%= include('footer.jst') %>
